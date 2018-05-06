@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Jura:300,400,500,600,700');
+
+body {
+    font-family: 'Jura', sans-serif;
+    color: #333333;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* tossing animation */
+.tossing {
+    animation-name: tossing;
+    -webkit-animation-name: tossing;
+    animation-duration: 3.5s;
+    -webkit-animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes tossing {
+    0% {
+        transform: rotate(-4deg);
+    }
+    
+    50% {
+        transform: rotate(4deg);
+    }
+    100% {
+        transform: rotate(-4deg);
+    }
+}
